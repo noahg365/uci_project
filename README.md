@@ -1,5 +1,6 @@
 # uci_project1
-![network topology](https://user-images.githubusercontent.com/84607161/143983879-4ee45c00-efab-41b6-8b80-60e9c1d33dd8.png)
+![project1111](https://user-images.githubusercontent.com/84607161/143986034-01544328-6274-410e-a51c-1c8bcb708110.jpg)
+
 (Us-east-2) 
 
 These files have been tested and used to generate a live ELK deployment on AWS. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat-playbook.yaml file may be used to install only certain pieces of it, such as Filebeat.
@@ -55,7 +56,8 @@ The fourth step of the playbook is to install docker python module with a presen
 The fifth step of the playbook is to download and launch a docker web container with the image sebp/elk:761, a started state, and published ports of 5601, 9200, and 5044.
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
-Docker-ps-output
+![container list ](https://user-images.githubusercontent.com/84607161/143986138-ee63c120-4b09-4b27-b394-5429737c0b4c.png)
+
 
 Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -74,6 +76,6 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 
-Copy the playbook file to your ansible directory.
-Update the config file to include your ELK's private IP address
+Copy playbook file to your ansible directory.
+Update the config file to include the ELK private IP address
 http://[your.VM.IP]:5601/app/kibana is the url to check that vm is running.
